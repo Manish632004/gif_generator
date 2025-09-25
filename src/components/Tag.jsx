@@ -4,33 +4,10 @@ import Spinner from "./Spinner";
 import useGif from "../hooks/useGif";
 
 
-// const API_KEY = process.env.REACT_APP_GIPHY_API_KEY;
-
 const Tag = () => {
   const [tag, setTag] = useState("car");
   const {gif, loading, fetchData} = useGif(tag);
-  // const [gif, setGif] = useState("");
-  // const [loading, setLoading] = useState(false);
-  // const [tag, setTag] = useState("car");
-  // async function fetchData() {
-  //   setLoading(true)
-  //   const url = `https://api.giphy.com/v1/gifs/random?api_key=${API_KEY}&tag=${tag}`;
-  //   const {data} = await axios.get(url);
-  //   const imageSourse = data.data.images.downsized_large.url;
-  //   setGif(imageSourse);
-  //   setLoading(false)
-  // }
-  // useEffect (() => {
-  //   fetchData();
-  // },[])
 
-  // const clickHanler = () => {
-  //   fetchData();
-  // };
-
-  // const changeHandler = (event) => {
-  //   setTag(event.target.value);
-  // };
 
 
   return (
